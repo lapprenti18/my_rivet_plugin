@@ -16,7 +16,7 @@ const plugin: RivetPluginInitializer = (rivet) => {
   // The plugin object is the definition for your plugin.
   const examplePlugin: RivetPlugin = {
     // The ID of your plugin should be unique across all plugins.
-    id: "example-plugin",
+    id: "example",
 
     // The name of the plugin is what is displayed in the Rivet UI.
     name: "Example Plugin",

@@ -50,7 +50,7 @@ function examplePluginNode2(rivet) {
     // This returns UI information for your node, such as how it appears in the context menu.
     getUIData() {
       return {
-        contextMenuTitle: "Example Plugin",
+        contextMenuTitle: "Example Plugin 2",
         group: "Example",
         infoBoxBody: "This is an example plugin node. 2",
         infoBoxTitle: "Example Plugin Node 2"
@@ -71,7 +71,7 @@ function examplePluginNode2(rivet) {
     // what the current data of the node is in some way that is useful at a glance.
     getBody(data) {
       return rivet.dedent`
-        Example Plugin Node
+        Example Plugin Node 2
         Data: ${data.useSomeDataInput ? "(Using Input !)" : data.someData}
       `;
     },
@@ -105,7 +105,7 @@ var plugin = (rivet) => {
   const exampleNode2 = examplePluginNode2(rivet);
   const examplePlugin = {
     // The ID of your plugin should be unique across all plugins.
-    id: "example-plugin",
+    id: "example",
     // The name of the plugin is what is displayed in the Rivet UI.
     name: "Example Plugin",
     // Define all configuration settings in the configSpec object.
