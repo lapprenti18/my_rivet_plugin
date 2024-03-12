@@ -3,8 +3,7 @@
 // a parameter, and you can use it to access any Rivet functionality you need.
 import type { RivetPlugin, RivetPluginInitializer } from "@ironclad/rivet-core";
 
-import { examplePluginNode } from "./nodes/ExamplePluginNode";
-import { examplePluginNode2 } from "./nodes/ExamplePluginNode2";
+import { examplePluginNode, examplePluginNode2 } from "./nodes/index";
 
 // A Rivet plugin must default export a plugin initializer function. This takes in the Rivet library as its
 // only parameter. This function must return a valid RivetPlugin object.
