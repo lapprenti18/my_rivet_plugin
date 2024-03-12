@@ -6,7 +6,6 @@ import type { RivetPlugin, RivetPluginInitializer } from "@ironclad/rivet-core";
 import {
   examplePluginNode,
   examplePluginNode2,
-  examplePluginNode3,
 } from "./nodes/index";
 
 // A Rivet plugin must default export a plugin initializer function. This takes in the Rivet library as its
@@ -43,7 +42,6 @@ const plugin: RivetPluginInitializer = (rivet) => {
     register: (register) => {
       register(examplePluginNode(rivet));
       register(examplePluginNode2(rivet));
-      register(examplePluginNode3(rivet));
     },
   };
 
