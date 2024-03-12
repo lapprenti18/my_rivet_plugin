@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@ironclad/rivet-core": "^1.15.0",
+    "recursive-copy": "^2.0.14",
     "ts-pattern": "^5.0.5"
   },
   "devDependencies": {

@@ -1,9 +1,11 @@
 import type { ChartNode, PluginNodeDefinition, RivetPluginInitializer } from "@ironclad/rivet-core";
-import {
-  // examplePluginNode,
-  // examplePluginNode2
-  examplePluginNode3
-} from "./nodes";
+// import {
+//   // examplePluginNode,
+//   // examplePluginNode2
+//   examplePluginNode3
+// } from "./nodes";
+
+import { examplePluginNode3 } from "./nodes/nodeExample3";
 
 const plugin: RivetPluginInitializer = (rivet) => {
   const examplePlugin = {
