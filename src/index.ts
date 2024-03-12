@@ -4,15 +4,11 @@
 import type { RivetPlugin, RivetPluginInitializer } from "@ironclad/rivet-core";
 
 import { examplePluginNode } from "./nodes/ExamplePluginNode";
-// import { examplePluginNode2 } from "./nodes/ExamplePluginNode2";
+import { examplePluginNode2 } from "./nodes/ExamplePluginNode2";
 
 // A Rivet plugin must default export a plugin initializer function. This takes in the Rivet library as its
 // only parameter. This function must return a valid RivetPlugin object.
 const plugin: RivetPluginInitializer = (rivet) => {
-  // Initialize any nodes in here in the same way, by passing them the Rivet library.
-  const exampleNode = examplePluginNode(rivet);
-  // const exampleNode2 = examplePluginNode2(rivet);
-
   // The plugin object is the definition for your plugin.
   const examplePlugin: RivetPlugin = {
     // The ID of your plugin should be unique across all plugins.
@@ -42,8 +38,8 @@ const plugin: RivetPluginInitializer = (rivet) => {
     // Register any additional nodes your plugin adds here. This is passed a `register`
     // function, which you can use to register your nodes.
     register: (register) => {
-      register(exampleNode);
-      // register(exampleNode2);
+      register(examplePluginNode(rivet));
+      register(examplePluginNode2(rivet));
     },
   };
 
