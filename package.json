@@ -1,11 +1,11 @@
 {
   "name": "my-rivet-plugin",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@1.22.22",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/bundle.js",
   "files": [
-    "dist/bundle.js"
+    "dist"
   ],
   "scripts": {
     "build": "tsc -b && tsx bundle.ts",
@@ -16,7 +16,8 @@
     "serve": "serve --config ../serve.json dist"
   },
   "dependencies": {
-    "@ironclad/rivet-core": "^1.15.0"
+    "@ironclad/rivet-core": "^1.15.0",
+    "ts-pattern": "^5.0.5"
   },
   "devDependencies": {
     "esbuild": "^0.19.2",
