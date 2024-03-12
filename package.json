@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ironclad/rivet-core": "^1.15.0"
+  }
+}
