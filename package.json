@@ -3,9 +3,9 @@
   "packageManager": "yarn@3.5.0",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/bundle.js",
+  "main": "dist/bundle.ts",
   "files": [
-    "dist/bundle.js"
+    "dist/bundle.ts"
   ],
   "scripts": {
     "build": "tsc -b && tsx bundle.ts",
