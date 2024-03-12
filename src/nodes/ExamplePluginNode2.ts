@@ -108,7 +108,7 @@ export function examplePluginNode2(rivet: typeof Rivet) {
     // This returns UI information for your node, such as how it appears in the context menu.
     getUIData(): NodeUIData {
       return {
-        contextMenuTitle: "Example Plugin 2",
+        contextMenuTitle: "Example Plugin 3",
         group: "Example",
         infoBoxBody: "This is an example plugin node. 2",
         infoBoxTitle: "Example Plugin Node 2",
